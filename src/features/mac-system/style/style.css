@@ -1,0 +1,12 @@
+.background {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    line-height: 1.5;
+    height: 100vh;
+    background-image: url('../images/system/app-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: background-image 0.8s ease;
+}
