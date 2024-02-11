@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CloseIcon from "../../../assets/images/vscode/chrome-close.svg";
 
 const RenderFile = ({ name, icon, isRemove, handleRemoveFile }) => {
   return (
@@ -12,12 +13,7 @@ const RenderFile = ({ name, icon, isRemove, handleRemoveFile }) => {
           onClick={handleRemoveFile}
           className="hover:bg-white/10 hidden group-hover:block absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 rounded-sm"
         >
-          <img
-            alt=""
-            src="src/assets/images/vscode/chrome-close.svg"
-            width={12}
-            height={12}
-          />
+          <img alt="" src={CloseIcon} width={12} height={12} />
         </div>
       )}
     </div>
