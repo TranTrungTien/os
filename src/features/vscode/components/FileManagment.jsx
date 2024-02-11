@@ -2,16 +2,13 @@ import { allFiles } from "../../../constants";
 import RenderFile from "./RenderFile";
 import PropTypes from "prop-types";
 
+import chevronRightIcon from "../../../assets/images/vscode/chevron-right.svg";
+
 const FileManagement = ({ onChangeFile }) => {
   return (
     <aside className="explorer text-white p-2 min-w-[160px] border-x border-solid border-[#2b2b2b]">
       <div className="uppercase flex items-center gap-x-1">
-        <img
-          src="src/assets/images/vscode/chevron-right.svg"
-          alt=""
-          width={16}
-          height={16}
-        />
+        <img src={chevronRightIcon} alt="" width={16} height={16} />
         <span className="text-[11px]">Explore</span>
       </div>
       <div className="explorer-content">

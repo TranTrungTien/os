@@ -1,16 +1,19 @@
 import PropTypes from "prop-types";
+import RestoreIcon from "../../../assets/images/vscode/chrome-restore.svg";
+import MaximizeIcon from "../../../assets/images/vscode/chrome-maximize.svg";
+import CloseIcon from "../../../assets/images/vscode/chrome-close.svg";
 
 const chromeIcon = [
   {
-    icon: "src/assets/images/vscode/chrome-restore.svg",
+    icon: RestoreIcon,
     action: "restore",
   },
   {
-    icon: "src/assets/images/vscode/chrome-maximize.svg",
+    icon: MaximizeIcon,
     action: "maximize",
   },
   {
-    icon: "src/assets/images/vscode/chrome-close.svg",
+    icon: CloseIcon,
     action: "close",
   },
 ];

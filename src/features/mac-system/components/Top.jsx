@@ -1,8 +1,9 @@
 import Dropdown from "./Dropdown";
+import AppleIcon from "../../../assets/images/system/Apple.svg";
 
 const Top = () => {
   const optionsLeft = [
-    { text: "", icon: "src/assets/images/system/Apple.svg" },
+    { text: "", icon: AppleIcon },
     { text: "Finder" },
     { text: "File" },
     { text: "Edit" },

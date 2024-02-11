@@ -30,7 +30,7 @@ const SystemOS = () => {
     <div
       className="h-screen bg-no-repeat bg-cover bg-center overflow-hidden relative flex flex-col"
       style={{
-        backgroundImage: "url(/images/system/app-background.jpg)",
+        backgroundImage: "url(images/system/app-background.jpg)",
       }}
     >
       <Top />

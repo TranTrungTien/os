@@ -1,44 +1,52 @@
 import PropTypes from "prop-types";
 import VSCode from "../../vscode";
+import FaceTimeIcon from "../../../assets/images/system/FaceTime.svg";
+import FolderIcon from "../../../assets/images/system/Folder.svg";
+import MailIcon from "../../../assets/images/system/Mail.svg";
+import MapsIcon from "../../../assets/images/system/Maps.svg";
+import MusicIcon from "../../../assets/images/system/Music.svg";
+import RemindersIcon from "../../../assets/images/system/Reminders.svg";
+import SafariIcon from "../../../assets/images/system/Safari.svg";
+import VscodeIcon from "../../../assets/images/system/Vscode.png";
 
 const apps = [
   {
-    icon: "src/assets/images/system/FaceTime.svg",
+    icon: FaceTimeIcon,
     id: "facetime",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Folder.svg",
+    icon: FolderIcon,
     id: "folder",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Mail.svg",
+    icon: MailIcon,
     id: "mail",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Maps.svg",
+    icon: MapsIcon,
     id: "maps",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Music.svg",
+    icon: MusicIcon,
     id: "music",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Reminders.svg",
+    icon: RemindersIcon,
     id: "reminders",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Safari.svg",
+    icon: SafariIcon,
     id: "safari",
     app: null,
   },
   {
-    icon: "src/assets/images/system/Vscode.png",
+    icon: VscodeIcon,
     id: "vscode",
     app: VSCode,
   },

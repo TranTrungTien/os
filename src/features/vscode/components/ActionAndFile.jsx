@@ -1,13 +1,13 @@
 import FileManagement from "./FileManagment";
 import PropTypes from "prop-types";
 
-const tabsIcon = [
-  "src/assets/images/vscode/files.svg",
-  "src/assets/images/vscode/search.svg",
-  "src/assets/images/vscode/debug.svg",
-  "src/assets/images/vscode/debug-alt.svg",
-  "src/assets/images/vscode/extensions.svg",
-];
+import CloseIcon from "../../../assets/images/vscode/files.svg";
+import SearchIcon from "../../../assets/images/vscode/search.svg";
+import DebugIcon from "../../../assets/images/vscode/debug.svg";
+import DebugAltIcon from "../../../assets/images/vscode/debug-alt.svg";
+import ExtIcon from "../../../assets/images/vscode/extensions.svg";
+
+const tabsIcon = [CloseIcon, SearchIcon, DebugIcon, DebugAltIcon, ExtIcon];
 
 const ActionAndFile = ({ onChangeFile }) => (
   <div className="flex bg-[#181818] h-full flex-1">

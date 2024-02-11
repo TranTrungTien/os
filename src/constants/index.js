@@ -1,3 +1,9 @@
+import HTMLIcon from "../assets/images/vscode/html.png";
+import JsIcon from "../assets/images/vscode/javascript.svg";
+import CssIcon from "../assets/images/vscode/css_icon.svg";
+import TwigIcon from "../assets/images/vscode/twig.svg";
+import JsonIcon from "../assets/images/vscode/json_icon.svg";
+
 export const allFiles = [
   {
     name: "summary_info.html",
@@ -32,7 +38,7 @@ export const allFiles = [
 
 </html>
 `,
-    icon: "src/assets/images/vscode/html.png",
+    icon: HTMLIcon,
   },
   {
     name: "experience.html",
@@ -75,12 +81,12 @@ Researched and implemented Backend for Frontend (BFF) to enhance security.</p>
 
 </html>
 `,
-    icon: "src/assets/images/vscode/html.png",
+    icon: HTMLIcon,
   },
   {
     name: "language_and_technologies.json",
     lang: "json",
-    icon: "src/assets/images/vscode/json_icon.svg",
+    icon: JsonIcon,
     value: `
     {
         "Languages": "HTML, CSS, Javascript, Typescript.",
@@ -92,18 +98,18 @@ Researched and implemented Backend for Frontend (BFF) to enhance security.</p>
   {
     name: "education.js",
     lang: "javascript",
-    icon: "src/assets/images/vscode/javascript.svg",
+    icon: JsIcon,
     value:
       'console.log("B.Sc. Software Engineering, University Of Information And Communication Technology")',
   },
   {
     name: "about.css",
     lang: "css",
-    icon: "src/assets/images/vscode/css_icon.svg",
+    icon: CssIcon,
   },
   {
     name: "contact.twig",
     lang: "twig",
-    icon: "src/assets/images/vscode/twig.svg",
+    icon: TwigIcon,
   },
 ];
