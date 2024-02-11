@@ -14,12 +14,7 @@ const FileManagement = ({ onChangeFile }) => {
       <div className="explorer-content">
         <div className="toggle-chevron text-[11px]"></div>
         <div className="uppercase flex items-center gap-x-1">
-          <img
-            src="src/assets/images/vscode/chevron-right.svg"
-            alt=""
-            width={16}
-            height={16}
-          />
+          <img src={chevronRightIcon} alt="" width={16} height={16} />
           <span className="text-[11px]">PORTFOLIO</span>
         </div>
         <div className="file-list ml-1">
