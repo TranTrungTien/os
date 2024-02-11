@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import RestoreIcon from "../../../assets/images/vscode/chrome-restore.svg";
 import MaximizeIcon from "../../../assets/images/vscode/chrome-maximize.svg";
 import CloseIcon from "../../../assets/images/vscode/chrome-close.svg";
+import VScodeIcon from "../../../assets/images/vscode/logo-vscode.svg";
 
 const chromeIcon = [
   {
@@ -26,11 +27,7 @@ const TopVS = ({ file, onFullScreen, onClose }) => {
   return (
     <div className="cursor-move bg-[#1e1e1e] flex justify-between items-center px-2 py-1 border border-solid border-[#2b2b2b]">
       <div className="logo px-1">
-        <img
-          width={22}
-          src="src/assets/images/vscode/logo-vscode.svg"
-          alt="logo-vscode"
-        />
+        <img width={22} src={VScodeIcon} alt="logo-vscode" />
       </div>
       <div className="text-white text-xs">
         {file?.name} - Visual Studio Code
