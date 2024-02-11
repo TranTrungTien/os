@@ -1,3 +1,5 @@
+import Dropdown from "./Dropdown";
+
 const Top = () => {
   const optionsLeft = [
     { text: "", icon: "src/assets/images/system/Apple.svg" },
@@ -19,15 +21,16 @@ const Top = () => {
     { text: "Help" },
   ];
   return (
-    <div className="absolute left-0 right-0 top-0 w-full h-6 bg-white/[.70] px-5">
+    <div className="w-full h-6 bg-white/[.70] px-5">
       <div className="flex justify-between items-center">
         <div className="flex justify-start items-center gap-x-3">
           {optionsLeft.map((item) => (
-            <div key={item.text}>
+            <div className="relative group cursor-pointer" key={item.text}>
               {item?.icon ? (
                 <img src={item?.icon} alt="" width={22} height={22} />
               ) : null}
               <span className="text-sm">{item.text}</span>
+              <Dropdown />
             </div>
           ))}
         </div>
