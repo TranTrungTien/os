@@ -2,8 +2,9 @@ import { useState } from "react";
 import ModalDraggable from "../../components/ModalDraggable";
 import LoadingOs from "./components/LoadingOs";
 import PreviewOs from "./components/PreviewOs";
-import Tabbar from "./components/Tabbar";
+import Docks from "./components/Docks";
 import Top from "./components/Top";
+import "./style/style.scss";
 
 const SystemOS = () => {
   const [osState, setOsState] = useState(1);
@@ -60,7 +61,7 @@ const SystemOS = () => {
                   </ModalDraggable>
                 );
               })}
-              <Tabbar onSelectApp={handleSelectApp} />
+              <Docks onSelectApp={handleSelectApp} />
             </div>
           </div>
         );

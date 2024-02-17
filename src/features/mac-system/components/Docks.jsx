@@ -52,28 +52,34 @@ const apps = [
   },
 ];
 
-const Tabbar = ({ onSelectApp }) => {
+const Docks = ({ onSelectApp }) => {
   return (
-    <div className="absolute left-0 right-0 z-[1] mx-auto text-center bottom-8 w-11/12 rounded-lg h-11 bg-white/[.48]">
-      <div className="flex justify-center items-center h-full gap-x-2">
-        {apps.map((item, index) => (
-          <img
-            className="cursor-pointer"
-            onClick={() => onSelectApp(item)}
-            key={index}
-            alt=""
-            src={item.icon}
-            width={40}
-            height={40}
-          />
-        ))}
+    <div className="absolute left-0 right-0 z-[1] mx-auto text-center bottom-8 w-11/12 rounded-lg h-11 bg-[rgba(83,_83,_83,_0.25)] border border-[rgba(83,_83,_83,_0.5)] border-solid backdrop-blur">
+      <div className="w-max mx-auto h-full">
+        <div className="flex justify-center items-center h-full gap-x-2 w-max">
+          {apps.map((item, index) => (
+            <div
+              onClick={() => onSelectApp(item)}
+              key={index}
+              className={`li-${index + 1} group`}
+            >
+              <img
+                className="cursor-pointer transition-all duration-300-500 group-hover:scale-150 group-hover:-translate-y-4"
+                alt=""
+                src={item.icon}
+                width={40}
+                height={40}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Tabbar;
+export default Docks;
 
-Tabbar.propTypes = {
+Docks.propTypes = {
   onSelectApp: PropTypes.any,
 };
