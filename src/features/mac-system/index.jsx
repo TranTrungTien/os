@@ -4,7 +4,6 @@ import LoadingOs from "./components/LoadingOs";
 import PreviewOs from "./components/PreviewOs";
 import Docks from "./components/Docks";
 import Top from "./components/Top";
-import "./style/style.scss";
 
 const SystemOS = () => {
   const [osState, setOsState] = useState(1);

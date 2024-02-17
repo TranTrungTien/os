@@ -4,6 +4,7 @@ import "../style/loading-os.css";
 
 const LoadingOs = ({ onNextScreen }) => {
   const [delaying, setDelaying] = useState(true);
+  const [showLine2, setShowLine2] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setDelaying(false);
@@ -13,6 +14,12 @@ const LoadingOs = ({ onNextScreen }) => {
     setTimeout(() => {
       onNextScreen(2);
     }, 12000);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLine2(true);
+    }, 3500);
   }, []);
 
   return (
@@ -26,7 +33,11 @@ const LoadingOs = ({ onNextScreen }) => {
                 <p>Tran Trung Tien...</p>
               </div>
             </div>
-            <div className="flex items-center gap-x-2">
+            <div
+              className={`flex items-center gap-x-2 ${
+                showLine2 ? "visible" : "invisible"
+              }`}
+            >
               <div>owner {">>:"}</div>
               <div className="typing-line-2">
                 <p>The system is loading, waits some minutes...</p>
